@@ -20,7 +20,7 @@ To use this module, you should have Terraform installed and configured for GCP. 
 
 ```hcl
 module "mysql-db" {
-  source               = "https://github.com/opsstation/terraform-gcp-mysql.git"
+  source               = "https://github.com/yadavprakash/terraform-gcp-mysql.git"
   name                 = "test"
   environment          = "mysql"
   random_instance_name = true
@@ -61,14 +61,14 @@ This example demonstrates how to create various GCP resources using the provided
 - This module currently does not provide any outputs.
 
 # Examples
-For detailed examples on how to use this module, please refer to the [example](https://github.com/opsstation/terraform-gcp-mysql/tree/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [example](https://github.com/yadavprakash/terraform-gcp-mysql/tree/master/_example) directory within this repository.
 
 ## Authors
 Your Name
 Replace '[License Name]' and '[Your Name]' with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/opsstation/terraform-gcp-mysql/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/yadavprakash/terraform-gcp-mysql/blob/master/LICENSE) file for details.
 
 
 
@@ -94,7 +94,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::git@github.com:opsstation/terraform-gcp-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::git@github.com:yadavprakash/terraform-gcp-labels.git | v1.0.0 |
 
 ## Resources
 
@@ -146,7 +146,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 | <a name="input_maintenance_window_day"></a> [maintenance\_window\_day](#input\_maintenance\_window\_day) | The day of week (1-7) for the master instance maintenance. | `number` | `1` | no |
 | <a name="input_maintenance_window_hour"></a> [maintenance\_window\_hour](#input\_maintenance\_window\_hour) | The hour of day (0-23) maintenance window for the master instance maintenance. | `number` | `23` | no |
 | <a name="input_maintenance_window_update_track"></a> [maintenance\_window\_update\_track](#input\_maintenance\_window\_update\_track) | The update track of maintenance window for the master instance maintenance.Can be either `canary` or `stable`. | `string` | `"canary"` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy,opsstation'. | `string` | `"opsstation"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy,yadavprakash'. | `string` | `"yadavprakash"` | no |
 | <a name="input_module_depends_on"></a> [module\_depends\_on](#input\_module\_depends\_on) | List of modules or resources this module depends on. | `list(any)` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the resource. Provided by the client when the resource is created. | `string` | `"test"` | no |
 | <a name="input_pricing_plan"></a> [pricing\_plan](#input\_pricing\_plan) | The pricing plan for the master instance. | `string` | `"PER_USE"` | no |
